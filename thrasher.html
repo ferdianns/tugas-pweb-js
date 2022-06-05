@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trasher Jacket | TOKO BARU</title>
+	<link rel="stylesheet" type="text/css" href="detail.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<h1><a href="index.html">TOKO BARU</a></h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="">PRODUCTS</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">CONTACT</a></li>
+				<li><a href="account.html" target=_blank”>ACCOUNT</a></li>
+			</ul> 
+		</nav>
+		<img src="cart2.png" width="25px" height="25px">
+	</div>
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="product-1.jpg" width="100%" id="ProductImg">
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="product-1a.jpg" width="100" class="small-img">
+						</div>
+						<div class="small-img-col">
+						<img src="https://dynamic.zacdn.com/MmpZFKhzWZBPzVEZBHrVfsaOlQo=/fit-in/346x500/filters:quality(90):fill(ffffff)/https://static-id.zacdn.com/p/thrasher-8826-3880533-3.jpg" width="100" class="small-img">
+						</div>
+						<div class="small-img-col">
+						<img src="https://dynamic.zacdn.com/q3XgYrRng-C98NVWirJkMkECqHs=/fit-in/346x500/filters:quality(90):fill(ffffff)/https://static-id.zacdn.com/p/thrasher-8826-3880533-2.jpg" width="100" class="small-img">
+						</div>
+						<div class="small-img-col">
+						<img src="product-1.jpg" width="100" class="small-img">
+						</div>
+					</div>
+			</div>
+			<div class="col-2">
+				<p>Home / Jacket</p>
+				<h1>Thrasher</h1>
+				<p>FLAME SATIN COACH JACKET</p>
+				<h4>Rp 1.635.000</h4>
+				<select>
+					<option>Ukuran</option>
+					<option>XXL</option>
+					<option>XL</option>
+					<option>L</option>
+					<option>M</option>
+				</select>
+				<input type="number" min="1">
+				<a href="" class="btn">Beli</a>
+				<h3>Detail Produk</h3>
+				<br>
+				<p>- Jaket coach dengan logo Thrasher dibagian depan dan belakang jaket<br>- Warna hitam<br>- Jaket berkerah<br>- Karet pada ujung lengan<br>- Tali serut pada bagian bawah jaket<br>- Kancing jepret<br>- Regular fit<br>- Material 100% Polyester</p>
+			</div>	
+		</div>
+	</div>
+	Komentar:<br/>
+<form>
+<table>
+       <tr>
+       	<td></td>
+         <td><textarea cols="30" rows="5"></textarea></td>
+       </tr>
+       <tr>
+         <td><input type="submit" value="Postkan Komentar"/></td>
+         <td><input type="reset" value="hapus"></td>
+        </tr>
+</table>
+</form>	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and iOS phone</p>
+					<div class="app-logo">
+						<img src="play-store.png">
+						<img src="app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<h1>TOKO BARU</h1>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Privacy Policy</li>
+						<li>Join Affiliator</li>
+					</ul>
+				</div>
+					<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="https://web.facebook.com/?_rdc=1&_rdr">Facebook</a></li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+						<li>Twitter</li>
+					</ul>
+				</div>	
+				</div>
+				<hr>
+				<p class="copyright">© 2022 TOKO BARU</p>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<script>
+	var ProductImg = document.getElementById("ProductImg");
+	var SmallImg = document.getElementsByClassName("small-img");
+
+	SmallImg[0].onclick  = function() 
+	 {
+		 ProductImg.src = SmallImg[0].src;
+	 }
+	SmallImg[1].onclick  = function() 
+	 {
+		 ProductImg.src = SmallImg[1].src;
+	 }
+	SmallImg[2].onclick  = function() 
+	 {
+		 ProductImg.src = SmallImg[2].src;
+	 }
+	SmallImg[3].onclick  = function() 
+	 {
+		 ProductImg.src = SmallImg[3].src;
+	 }
+</script>
+</body>
+</html>

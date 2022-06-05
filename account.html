@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Akun</title>
+</head>
+<body>
+	<div class="account-page">
+		<div class="container">
+				<div class="col-2">
+					<h1 class="kepret">TOKO BARU</h1>
+				</div>	
+				<div class="col-2">
+					<div class="form-container">
+						<div class="form-btn">
+							<span>Masuk</span>
+						</div>
+						<form action="index.html" method="GET">
+							<input type="text" placeholder="Username"required="required">
+							<input type="password" placeholder="Password"required="required">
+							<button type="submit" class="btn">Masuk</button>
+					</div>	
+				</div>		
+			</div>		
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and iOS phone</p>
+					<div class="app-logo">
+						<img src="play-store.png">
+						<img src="app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<h1>TOKO BARU</h1>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Privacy Policy</li>
+						<li>Join Affiliator</li>
+					</ul>
+				</div>
+					<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+						<li>Twitter</li>
+					</ul>
+				</div>	
+				</div>
+				<hr>
+				<p class="copyright">© 2022 TOKO BARU</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript"> // Login System Logic
+        function Login() {
+            var done = 0;
+            var username = document.login.username.value;
+            username = username.toLowerCase();
+            var password = document.login.password.value;
+            password = password.toLowerCase();
+            if (username == "kotakode" && password == "kotakode") {
+                window.location.href = "https://kotakode.com/users/242/andikapangestu";
+            } else
+                if (done == 0) {
+                    alert("Username/Password yang anda masukan salah!");
+                }
+        }
+
+
+        // Javascript Template 
+        const body = document.querySelector("body");
+        const modal = document.querySelector(".modal");
+        const modalButton = document.querySelector(".modal-button");
+        const closeButton = document.querySelector(".close-button");
+        const scrollDown = document.querySelector(".scroll-down");
+        let isOpened = false;
+
+        const openModal = () => {
+            modal.classList.add("is-open");
+            body.style.overflow = "hidden";
+        };
+
+        const closeModal = () => {
+            modal.classList.remove("is-open");
+            body.style.overflow = "initial";
+        };
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > window.innerHeight / 3 && !isOpened) {
+                isOpened = true;
+                scrollDown.style.display = "none";
+                openModal();
+            }
+        });
+
+        modalButton.addEventListener("click", openModal);
+        closeButton.addEventListener("click", closeModal);
+
+        document.onkeydown = evt => {
+            evt = evt || window.event;
+            evt.keyCode === 27 ? closeModal() : false;
+        };
+
+    </script>
+       
+</body>
+</html>
